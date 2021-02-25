@@ -68,4 +68,4 @@ cat "$CONFIG_PATH" | jq 'del(.data_path, .zigbee_shepherd_devices, .socat)' \
     | MQTT_USER="$MQTT_USER"  jq '.mqtt.user=env.MQTT_USER' \
     | MQTT_PASSWORD="$MQTT_PASSWORD" jq '.mqtt.password=env.MQTT_PASSWORD' \
     | MQTT_SERVER="$MQTT_SERVER" jq '.mqtt.server=env.MQTT_SERVER' \
-    > $DATA_PATH/configuration.yaml
+    > $DATA_PATH/configuration.yaml.gen
