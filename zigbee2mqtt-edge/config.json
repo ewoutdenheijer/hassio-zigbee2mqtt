@@ -26,5 +26,8 @@
     "options": {
     "data_path": "/config/zigbee2mqtt_edge"
     },
+  "schema": {
+    "data_path": "str"
+  },
   "image": "zigbee2mqtt/zigbee2mqtt-edge-{arch}"
-}
+  }
